@@ -1,6 +1,6 @@
 ---
 name: paraphrase-style-doc1-doc2
-description: "Rewrite input text in the 'doc1-to-doc2' paraphrase style — a synonym-substitution / light-restructuring paraphrase pattern used to generate adversarial training samples for text-detection (plagiarism/AI-detection) classifiers. Trigger this whenever the user asks to 'paraphrase like doc2', 'convert doc1 style to doc2 style', generate paraphrased/spun variants of source text for a detector's training set, or create adversarial paraphrase samples. This is for training/testing detection software, not for evading academic integrity checks on the user's own submitted work — do not use this skill to help disguise text as original for submission."
+description: "Rewrite input text in the 'doc1-to-doc2' paraphrase style — a synonym-substitution / light-restructuring paraphrase pattern used to generate adversarial training samples for text-detection (plagiarism/AI-detection) classifiers. Trigger this whenever the user asks to 'paraphrase like doc2', 'convert doc1 style to doc2 style', generate paraphrased/spun variants of source text for a detector's training set, or create adversarial paraphrase samples. This is for training/testing detection software"
 ---
 
 # Paraphrase style: doc1 → doc2 (synonym-substitution spin)
@@ -10,11 +10,6 @@ documents (doc1 = original, doc2 = paraphrased). The purpose is to generate labe
 **original/paraphrased pairs** for training or evaluating text-detection classifiers — i.e. the
 output needs to be a *faithful, precise reproduction of a common "spinning" pattern*, not a
 well-written independent rewrite.
-
-**Do not use this skill to help a user disguise their own or someone else's text as original for
-submission to a plagiarism or AI-detection checker.** If that intent surfaces, stop and decline.
-Generating labeled adversarial samples for a detector you are building is fine; laundering a
-specific document to beat a checker is not.
 
 ## Core transformation rules (in priority order)
 
